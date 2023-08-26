@@ -1,0 +1,105 @@
+.offer{
+    height:75px;
+    background-color: rgb(20, 20, 242);
+}
+.h3{
+    left: 0px;
+    bottom:0px;
+}
+.dropdown-menu li{
+    list-style: none;
+    padding: 0;
+  
+
+   
+}
+.dropdown-menu{
+    display:flex;
+}
+.dropdown-menu ul{
+    display: flex;
+}
+.dropdown-menu ul li{
+    margin-top: 8px;
+}
+.description{
+    background-color: aquamarine;
+
+}
+.first{
+    background-color: rgb(127, 163, 255);
+
+}
+.second{
+    background-color: rgb(41, 56, 51);
+
+}
+.newimage1{
+    height:200px;
+}
+.newsletter{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.newsletterp{
+    font-size: 22px;
+}
+.social{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.socialp{
+    font-size: 22px;
+}
+
+
+.navbar-section{
+    position: sticky;
+    top:0;
+    z-index:1000;
+}
+.signin h1,h3{
+    color:rgb(52, 52, 251);
+    
+}
+.signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width:100%;
+    padding:25px;
+    margin-top: 25vh;
+}
+
+.register{
+    border-radius: 12px;
+    background-color: rgb(156, 156, 245);
+    color:white;
+    width:25%;
+    padding:auto;
+}
+.form-control{
+    padding: auto;
+}
+#password{
+    padding:auto;
+}
+
+@media(max-width:424px){
+    .signin h1{
+        font-size: 12px;
+           }
+    .signin button{
+        background-color: blueviolet;
+    }
+    .signin h3{
+        font-size: 8px;
+    }
+}
+html,body{
+    margin: 0px;
+    padding:0px;
+    width:100vw;
+    overflow-x:hidden;
+}

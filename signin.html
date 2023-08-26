@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    
+    <div class="signin">
+        <div class="sign-inner"></div>
+                <img src="images/logo.png.png" alt="">
+                <h1> Welcome to ECOVACS!</h1>
+                <h3>You can signup here</h3>
+                
+                    
+                <form  action="#" class="myform">
+                    
+                <input class="form-control" id="email" type="mail" placeholder="Enter your email"><br>
+               
+                <input type="password" id="pwd" name="pwd" placeholder="Must be of 6 characters"> <br>
+               
+                <button type="submit" class="btn btn-info" onclick="validate()">Login</button>
+                
+                </form>
+            
+                <!--<button  class="register "onclick="myFunction()">Register</button>-->
+        </div>
+    </div>
+    <script>
+
+function validate(){  
+    let cont=1;
+      let input = document.getElementById("email").value;
+      let reg = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9]+).([a-zA-Z0-9]+)(.[a-zA-Z0-9]+)?$/;
+      let result = reg.test(input);
+      if (result == false) {
+         cont=0;
+        alert("invalid email id");
+
+                }
+        var password=document.getElementById("pwd").value;  
+        if(password.length<6){  
+            cont=0;
+    alert("Password must be at least 6 characters long.");  
+    } 
+    if(cont==1) 
+    {
+        alert("happy to be a part of Evacos");
+    }
+}  
+</Script>
+</body>
+</html>
